@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        
+        <record forcecreate="True" id="cbk_ir_cron_scheduler_action" model="ir.cron">
+            <field name="name">Split mrp scheduler</field>
+            <field eval="False" name="active"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall"/>
+            <field eval="'procurement.order'" name="model"/>
+            <field eval="'run_scheduler_split'" name="function"/>
+            <field eval="'(False,False, True, 150)'" name="args"/>
+        </record>
+
+        <record forcecreate="True" id="cbk_ir_cron_scheduler_action_interval_1" model="ir.cron">
+            <field name="name">Split mrp scheduler without exceptions - Interval 1 </field>
+            <field eval="False" name="active"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall"/>
+            <field eval="'procurement.order'" name="model"/>
+            <field eval="'run_scheduler_split'" name="function"/>
+            <field eval="'(False,False, False, 150)'" name="args"/>
+        </record>
+
+         <record forcecreate="True" id="cbk_ir_cron_scheduler_action_interval_2" model="ir.cron">
+            <field name="name">Split mrp scheduler without exceptions - Interval 2 </field>
+            <field eval="False" name="active"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall"/>
+            <field eval="'procurement.order'" name="model"/>
+            <field eval="'run_scheduler_split'" name="function"/>
+            <field eval="'(False,False, False, 150)'" name="args"/>
+        </record>
+
+         <record forcecreate="True" id="cbk_ir_cron_scheduler_action_interval_3" model="ir.cron">
+            <field name="name">Split mrp scheduler without exceptions - Interval 3 </field>
+            <field eval="False" name="active"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall"/>
+            <field eval="'procurement.order'" name="model"/>
+            <field eval="'run_scheduler_split'" name="function"/>
+            <field eval="'(False,False, False, 150)'" name="args"/>
+        </record>
+
+         <record forcecreate="True" id="cbk_ir_cron_scheduler_action_interval_4" model="ir.cron">
+            <field name="name">Split mrp scheduler without exceptions - Interval 4 </field>
+            <field eval="False" name="active"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall"/>
+            <field eval="'procurement.order'" name="model"/>
+            <field eval="'run_scheduler_split'" name="function"/>
+            <field eval="'(False,False, False, 150)'" name="args"/>
+        </record>
+        
+    </data>
+</openerp>
